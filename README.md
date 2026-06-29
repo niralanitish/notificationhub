@@ -14,14 +14,9 @@ A simple and responsive **Notification Management System** built using **Java Sp
 
 # 🌐 Live Demo
 
-### 🚀 Frontend (Vercel)
+### 🚀 Working Link
 
-https://notificationhub-liard.vercel.app/
-
-### ⚙️ Backend API (Railway)
-
-https://notificationhub-production-9a77.up.railway.app/api/notifications
-
+https://notificationhub-vh7q.onrender.com/
 ---
 
 # 📂 GitHub Repository
