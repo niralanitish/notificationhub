@@ -1,4 +1,4 @@
-const API = "https://notificationhub-production-9a77.up.railway.app/api/notifications";
+const API = "/api/notifications";
 
 let notifications = [];
 let editId = null;
