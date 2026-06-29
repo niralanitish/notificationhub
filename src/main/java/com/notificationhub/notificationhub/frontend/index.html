@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real-Time Notification Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>🔔 NotifyHub</h2>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-column"></i>
+                Analytics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+
+            <h1>Real-Time Notification Hub</h1>
+
+            <button id="darkBtn">
+
+                🌙 Dark Mode
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card blue">
+
+                <h2 id="count">0</h2>
+
+                <p>Total Notifications</p>
+
+            </div>
+
+            <div class="card green">
+
+                <h2 id="infoCount">0</h2>
+
+                <p>INFO</p>
+
+            </div>
+
+            <div class="card orange">
+
+                <h2 id="warningCount">0</h2>
+
+                <p>WARNING</p>
+
+            </div>
+
+            <div class="card purple">
+
+                <h2 id="successCount">0</h2>
+
+                <p>SUCCESS</p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Search -->
+
+        <div class="searchBox">
+
+            <input
+
+                type="text"
+
+                id="search"
+
+                placeholder="Search Notification..."
+
+                onkeyup="searchNotification()"
+
+            >
+
+        </div>
+
+
+
+        <!-- Form -->
+
+        <div class="formContainer">
+
+            <h2>Add Notification</h2>
+
+            <input
+
+                type="number"
+
+                id="id"
+
+                placeholder="Notification ID"
+
+            >
+
+            <input
+
+                type="text"
+
+                id="title"
+
+                placeholder="Title"
+
+            >
+
+            <textarea
+
+                id="message"
+
+                placeholder="Enter Message"
+
+            ></textarea>
+
+            <select id="type">
+
+                <option>INFO</option>
+
+                <option>WARNING</option>
+
+                <option>SUCCESS</option>
+
+            </select>
+
+            <button onclick="addNotification()">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Send Notification
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Notification List -->
+
+        <h2 class="heading">
+
+            Recent Notifications
+
+        </h2>
+
+        <div id="notificationList">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Toast -->
+
+    <div id="toast">
+
+        Notification Added Successfully
+
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
